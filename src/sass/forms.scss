@@ -1,0 +1,335 @@
+@import "../sass/colors";
+@import "../sass/variables";
+@import "../sass/mixins";
+// @import "globalVars";
+
+.form-global {
+  text-align: left;
+
+  .ui-calendar.ui-calendar-w-btn input {
+    border-radius: 8px;
+  }
+
+  .input-bp,
+  select,
+  .ui-inputtext {
+    width: 100%;
+    height: 48px;
+    padding: 5px 10px;
+    border: 1.2px solid $black-400;
+    border-radius: 8px;
+    background: $white;
+    transition: 0.3s;
+    appearance: none;
+    font-family: $text-font;
+
+    &:focus {
+      border-color: $black-500;
+    }
+  }
+
+  .input-bp {
+    @include placeholder(var(--n-300));
+  }
+
+  .set-state-success {
+    border: 1px solid $success-500;
+  }
+
+  .set-state-error {
+    border: 1px solid $error-800;
+  }
+
+  .set-state-error-bg {
+    border: 1.2px solid $error-800;
+    background-color: rgba(255, 199, 184, 0.5);
+  }
+
+  .set-state-focused {
+    border: 1px solid $black-500;
+  }
+
+  select {
+    padding-right: 40px;
+  }
+
+  .select-bp {
+    position: relative;
+  }
+
+  input[type="password"] {
+    letter-spacing: 3px;
+    font-size: $f-14;
+    font: small-caption;
+  }
+
+  .form-group {
+    margin-top: 20px;
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-size: $f-14 - 2;
+    }
+
+    .checkbox label {
+      font-size: $f-14 - 1;
+    }
+
+    .form-radiobutton-contanier {
+      border-radius: 10px;
+      padding: 20px;
+      font-size: $f-14 + 2;
+      line-height: 1.5;
+      letter-spacing: -0.3px;
+      box-shadow: 0 1px 3px 0 rgba(63, 63, 68, 0.15),
+        0 0 0 1px rgba(63, 63, 68, 0.05);
+      position: relative;
+
+      label {
+        font-size: $f-14 - 2;
+        display: inline;
+      }
+
+      input[type="text"],
+      input[type="tel"] {
+        display: grid;
+        width: 100%;
+        margin: 28px 0 0;
+        padding: 12px 16px;
+        border-radius: 4px;
+        border: 1px solid $black-300;
+      }
+    }
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.error-msg {
+  font-size: $f-14 - 2;
+  color: $error-800;
+  margin-top: 3px;
+}
+
+.checkbox {
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  label {
+    position: relative;
+    font-size: $f-14 + 2;
+    cursor: pointer;
+
+    &::before {
+      font-family: "icomoon";
+      width: 18px;
+      height: 18px;
+      border-radius: 2px;
+      border: 2px solid $black-500;
+      background: transparent;
+      content: "";
+      line-height: 15px;
+      text-align: center;
+      transition: 0.3s;
+      color: transparent;
+      font-size: $f-14;
+      font-weight: bold;
+
+      @include inline(middle);
+
+      margin-right: 8px;
+    }
+  }
+
+  input[type="checkbox"]:checked + label {
+    &::before {
+      color: $white;
+      background: $g-500;
+      border-color: $g-500;
+    }
+  }
+}
+
+.radio {
+  position: relative;
+
+  input[type="radio"] {
+    display: none;
+  }
+
+  label {
+    font-size: $f-14 + 2;
+    cursor: pointer;
+
+    &::after {
+      width: 20px;
+      height: 20px;
+      content: "";
+      border-radius: 10px;
+      border: 1.3px solid $black-200;
+      transition: 0.3s;
+      background-position: center center;
+      background-repeat: no-repeat;
+
+      @include inline(middle);
+
+      position: absolute;
+      right: 20px;
+      background-size: 20px;
+    }
+  }
+
+  input[type="radio"]:checked + label {
+    margin-bottom: 0;
+  }
+}
+
+.messages-select {
+  position: absolute;
+  right: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  img {
+    width: 30px;
+    height: auto;
+  }
+
+  i,
+  em {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: $white;
+    font-size: $f-14 - 4;
+    border-radius: 50%;
+
+    @include inline(top);
+
+    &.success {
+      background: $s-100;
+      color: $s-900;
+    }
+
+    &.warning {
+      background: $e-100;
+      color: $e-900;
+      cursor: pointer;
+    }
+  }
+}
+
+body {
+  .ui-datepicker {
+    padding: 0;
+    border-radius: 15px;
+    box-shadow: 0 16px 24px 0 rgba($black-900, 0.14);
+    background: $white;
+    overflow: hidden;
+  }
+
+  .ui-datepicker-calendar-container {
+    padding: 10px 18px;
+  }
+
+  .ui-datepicker .ui-datepicker-header {
+    padding: 10px;
+    background: $black-50;
+  }
+
+  .ui-datepicker th {
+    padding: 3px 10px;
+    font-size: $f-14 - 1;
+  }
+
+  .ui-datepicker .ui-datepicker-title {
+    font-size: $f-14;
+    font-weight: bold;
+  }
+
+  .ui-datepicker table td.ui-datepicker-today {
+    > a,
+    > span {
+      background: $black-200;
+    }
+  }
+
+  .ui-datepicker td {
+    > span,
+    > a {
+      border-radius: 8px;
+      margin: 3px 10px;
+      padding: 3px 4px;
+      font-size: $f-14 - 1;
+    }
+  }
+
+  .ui-datepicker:not(.ui-state-disabled) {
+    table td a:not(.ui-state-active):not(.ui-state-highlight):hover {
+      background: $black-100;
+    }
+  }
+
+  .ui-datepicker table td {
+    > a.ui-state-active,
+    > span.ui-state-active {
+      color: $white;
+      background-color: $g-500;
+    }
+  }
+
+  .ui-state-disabled,
+  .ui-widget:disabled {
+    opacity: 0.5;
+  }
+
+  .ui-datepicker {
+    .ui-datepicker-prev,
+    .ui-datepicker-next {
+      position: absolute;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      top: 50%;
+      transform: translateY(-50%);
+      background: transparent;
+      transition: 0.3s;
+
+      &:hover {
+        background: $black-100;
+      }
+    }
+  }
+
+  .ui-datepicker {
+    .ui-datepicker-next {
+      right: 12px;
+    }
+
+    .ui-datepicker-prev {
+      left: 12px;
+
+      .ui-datepicker-prev-icon {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .container_centered {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: $break-mobile) {
+  .messages-select {
+    right: 15px;
+    z-index: 2;
+    background: $white;
+  }
+}

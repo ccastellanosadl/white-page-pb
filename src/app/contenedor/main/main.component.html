@@ -1,0 +1,10 @@
+<h1>Componentes para Front PB</h1>
+
+<h3 class="first">Lista Componentes</h3>
+<p-listbox
+  [options]="opciones"
+  [(ngModel)]="selectedCity"
+  optionLabel="name"
+  (onDblClick)="redirect($event.value)"
+>
+</p-listbox>

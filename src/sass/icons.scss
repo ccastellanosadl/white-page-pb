@@ -1,0 +1,275 @@
+@import "variables";
+
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: "icomoon" !important;
+  // speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ui-datepicker-next-icon,
+.ui-datepicker-prev-icon {
+  font-family: "icomoon";
+}
+
+.icon-arrow-right-circle::before {
+  content: "";
+}
+
+.icon-arrow2-right::before,
+.ui-datepicker-next-icon::before,
+.ui-datepicker-prev-icon::before {
+  content: "";
+}
+
+.icon-bell::before {
+  content: "";
+}
+
+.icon-cdt::before {
+  content: "";
+}
+
+.icon-credit-card::before {
+  content: "";
+}
+
+.icon-cta_ahorros::before {
+  content: "";
+}
+
+.icon-cta_corriente::before {
+  content: "";
+}
+
+.icon-cta_hipotecario::before {
+  content: "";
+}
+
+.icon-ecosistema::before {
+  content: "";
+}
+
+.icon-libranza1::before {
+  content: "";
+}
+
+.icon-libre_destino::before {
+  content: "";
+}
+
+.icon-log-out::before {
+  content: "";
+}
+
+.icon-user::before {
+  content: "";
+}
+
+.icon-warning::before {
+  content: "";
+}
+
+.icon-arrow-right::before {
+  content: "";
+}
+
+.icon-arrow-left::before {
+  content: "";
+}
+
+.icon-minus::before {
+  content: "";
+}
+
+.icon-plus::before {
+  content: "";
+}
+
+.icon-pocket::before {
+  content: "";
+}
+
+.icon-libranza::before {
+  content: "";
+}
+
+.icon-file-text::before {
+  content: "";
+}
+
+.icon-award::before {
+  content: "";
+}
+
+.icon-search::before {
+  content: "";
+}
+
+.icon-edit::before {
+  content: "";
+}
+
+.icon-eye::before {
+  content: "";
+}
+
+.icon-eye-off::before {
+  content: "";
+}
+
+.icon-refresh::before {
+  content: "";
+}
+
+.icon-x-circle::before {
+  content: "";
+}
+
+.icon-check::before {
+  content: "";
+}
+
+.icon-exclamation-circle::before {
+  content: "";
+}
+
+.icon-arrow3-left::before {
+  content: "";
+}
+
+.icon-arrow3-right::before {
+  content: "";
+}
+
+.icon-tc::before {
+  content: "";
+}
+
+.icon-mobile::before {
+  content: "";
+}
+
+.icon-light::before {
+  content: "";
+}
+
+.icon-gas::before {
+  content: "";
+}
+
+.icon-ETB::before {
+  content: "";
+}
+
+.icon-water::before {
+  content: "";
+}
+
+.icon-check-strong::before {
+  content: "";
+}
+
+.icon-calendar::before {
+  content: "";
+}
+
+.icon-close::before {
+  content: "";
+}
+
+.icon-x-circle::before {
+  content: "";
+}
+
+.icon-x-close::before {
+  content: "";
+}
+
+.icon-filter::before {
+  content: "";
+}
+
+.icon-download::before {
+  content: "";
+}
+
+.icon-arrow-back::before {
+  content: "";
+}
+
+.icon-delete::before {
+  content: "";
+}
+
+.icon-transfer::before {
+  content: "";
+}
+
+.icon-info::before {
+  content: "";
+}
+
+.icon-security-circle::before {
+  content: "";
+}
+
+.icon-user-circle::before {
+  content: "";
+}
+
+.icon-accions-aval::before {
+  content: "";
+}
+
+.icon-advance::before {
+  content: "";
+}
+
+.icon-download-bottom::before {
+  content: "";
+}
+
+.icon-giros-y-retiros::before {
+  content: "";
+}
+
+.icon-pagar-tc::before {
+  content: "";
+}
+
+.icon-recarga-celular::before {
+  content: "";
+}
+
+.icon-generar-certificado::before {
+  content: "";
+}
+
+.icon-ver-bolsillos::before {
+  content: "";
+}
+
+.icon-pagar-obligacion::before {
+  content: "";
+}
+
+.icon-generar-extracto::before {
+  content: "";
+}
+
+/* background for big icons */
+.circle-green {
+  width: 160px;
+  height: 160px;
+  background: #d7f4d4;
+  padding-top: 20px;
+  border-radius: 100%;
+  margin: 20px auto;
+}

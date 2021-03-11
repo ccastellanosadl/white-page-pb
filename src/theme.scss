@@ -1,0 +1,20 @@
+@import "sass/colors";
+@import "sass/colors-root";
+// @import "sass/fonts.scss";
+@import "sass/variables";
+@import "sass/mixins";
+@import "sass/buttons";
+@import "sass/icons";
+@import "sass/animations";
+@import "sass/base-styles";
+@import "sass/forms";
+
+$break-tablet: 1024px;
+$break-mobile: 730px;
+
+$f-12: 12px;
+$f-14: 14px;
+$f-20: 20px;
+$f-30: 30px;
+
+$text-font: "Inter", sans-serif;
